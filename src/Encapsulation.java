@@ -17,7 +17,12 @@ class An{
     }
 
     public void setHehe(int p) {
-        hehe=p;
+        if(p>0 && p<10000){
+            hehe=p;
+        }
+        else{
+            System.out.println("check yo number dumbass");
+        }
     }
 
     public void setP(int p){
