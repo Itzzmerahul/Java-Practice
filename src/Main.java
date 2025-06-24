@@ -17,9 +17,20 @@ class B extends A{
     }
 }
 
-class Main{
+
+class C extends B{
+    int x=11;
+    C(String name){
+        super("Rahul");
+        System.out.println(x);
+
+    }
+
+}
+
+public class Main{
     public static void main(String args[]){
-            B b1=new B("Rahul");
+            C b1=new C("Rahul");
             System.out.println(b1.name + "\n" + b1.priv);
     }
 }
