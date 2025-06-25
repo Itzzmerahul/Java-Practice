@@ -1,7 +1,7 @@
 
 
 interface rath{
-    abstract void myname();
+    void myname();
 }
 
 class ram implements rath{
