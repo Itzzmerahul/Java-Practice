@@ -3,10 +3,14 @@ abstract class Vehicle1{
     abstract void start();
     abstract void stop();
 
+    public void hearmeout(){
+        System.out.println("concrete method");
+    }
+
 }
 
 class Bike extends Vehicle1{
-    @Override
+
     public void start(){
         System.out.println("brrrrrr");
     }
@@ -58,6 +62,7 @@ public class Abstractionlogic {
         Vehicle1 b = new Car();
         Vehicle1 c = new Bicycle();
         Vehicle1 d = new truck();
+        v.hearmeout();
         d.stop();
         d.start();
         c.start();
